@@ -58,6 +58,56 @@ a {
     color: var(--main-bg-color)
 }
 
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.texte-infos {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/****** Header ******/
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-logo {
+    width: 161px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+}
+
+.logo { 
+    width: 61px;
+    height: 19px;
+}
+
+.menu {
+    width: 344px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items : center;
+}
+
+.bouton-hebergements {
+    color: #0065FC;
+    padding-top: 14px;
+}
+
+.bouton-hebergements:hover {
+    border-top: 2px #0065FC solid;
+}
+
+.bouton-activites {
+    padding-top: 14px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
