@@ -108,6 +108,73 @@ header {
     padding-top: 14px;
 }
 
+/***** Barre de recherche ********/
+.container-barre-recherche {
+    width : 380px;
+    gap: 24px;
+    border-radius: 15px;
+    border : 1px solid #F2F2F2;
+    display : flex;
+    justify-content: space-between;
+}
+
+.element-icone {
+    height: 49px;
+    width: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fa-location-dot {
+    color: black;
+}
+
+form {
+
+    display: flex;
+    justify-content: center ;
+}
+
+input {
+    width: 147px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0px;
+}
+
+textarea:focus, input:focus { /* Trouvé sur internet, pour retirer bordure suite focus */
+    outline: none;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.bouton-rechercher {
+    width: auto;
+    height: 49px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center ;
+    background-color: #0065FC;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.bouton-rechercher > p { /* Ces deux lignes sont utilisées pour enlever la propriété par défault de p qui dépassaient du bouton */
+    margin-block-start: auto; 
+    margin-block-end: auto;  
+    color: white;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
