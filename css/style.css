@@ -393,7 +393,7 @@ input::placeholder {
 }
 
 .activites-cards .card-txt {
-    height: auto;
+    height: 59px;
     display: flex;
     align-items: center;
     padding-left: 19px;
@@ -470,7 +470,7 @@ footer {
     }
 
     .activites-cards .card-txt {
-        height: auto;
+        height: 70px;
     }
 }
 
