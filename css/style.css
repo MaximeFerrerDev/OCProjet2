@@ -360,8 +360,11 @@ input::placeholder {
 /* Activites */
 
 .activites {
-    width: auto;
-    padding: 30px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .activites-title {
@@ -375,7 +378,13 @@ input::placeholder {
 }
 
 .activites-cards > a {
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis:25%;
+}
+
+.activites-cards .card {
+    height:439px;
 }
 
 .activites-cards img {
@@ -385,14 +394,11 @@ input::placeholder {
     border-top-right-radius: 20px;
 }
 
-.activites-cards .card-title {
-    padding: 20px 19px;
-}
-
-.activites h3 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-
+.activites-cards .card-txt {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
 }
 
 /* Footer */
@@ -422,9 +428,8 @@ footer {
     font-weight: 400;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
 /****** Media queries ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -456,6 +461,18 @@ footer {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-cards img {
+        height: 200px;
+    }
+    
+    .activites-cards .card {
+        height: 270px;
+    }
+
+    .activites-cards .card-txt {
+        height: 70px;
     }
 }
 
