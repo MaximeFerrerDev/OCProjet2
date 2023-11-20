@@ -263,10 +263,15 @@ input::placeholder {
 }
 
 .hebergements-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+}
+
+.hebergements-cards a {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis : 25%;
 }
 
 .hebergements-cards img {
