@@ -110,9 +110,9 @@ header {
 
 /* Espace entre sections */
 main {
-    gap: 35px; /* Ajouté */
-    display: flex; /* Ajouté */
-    flex-direction: column; /* Ajouté */
+    gap: 35px; 
+    display: flex; 
+    flex-direction: column; 
     }
     
 /***** Barre de recherche ********/
@@ -303,7 +303,43 @@ input::placeholder {
     margin-bottom: 5px;
 }
 
+/* Activites */
 
+.activites {
+    width: auto;
+    padding: 30px;
+}
+
+.activites-title {
+    margin-bottom: 30px;
+}
+
+.activites-cards {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.activites-cards > a {
+    flex: 1;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card-title {
+    padding: 20px 19px;
+}
+
+.activites h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
