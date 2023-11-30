@@ -286,6 +286,7 @@ input::placeholder {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis : 25%;
+    min-width: 0px;
 }
 
 .accommodation-cards img {
@@ -307,12 +308,9 @@ input::placeholder {
     margin-bottom: 4px;
     font-size: 16px;
     font-weight: 700;
-    /*
     text-overflow:ellipsis;
     overflow:hidden;
     white-space: nowrap;
-    max-width: ???;
-    */
 }
 
 .accommodation-cards .card-subtitle {
