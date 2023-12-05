@@ -111,19 +111,15 @@ header {
     align-items : center;
 }
 
-.accommodation-button {
-    color: #0065FC;
+.accommodation-button, .activities-button {
     padding-top: 14px;
 }
 
-.accommodation-button:hover {
+.accommodation-button:hover, .activities-button:hover {
     border-top: 2px #0065FC solid;
+    color: #0065FC;
 }
 
-.activities-button {
-    padding-top: 14px;
-}
-    
 /***** Search bar ********/
 .container-search-bar {
     width : 380px;
@@ -536,7 +532,15 @@ footer {
         width:50%;
     }
 
-    .accommodation-button {
+    .activities-button, .accommodation-button {
+        width: 100%;
+        border-top: 0px;
+        padding-bottom: 14px;
+        border-bottom: 2px #F2F2F2 solid;
+        text-align: center;
+    }
+
+    .accommodation-button:hover, .activities-button:hover {
         width: 100%;
         color: #0065FC;
         padding-bottom: 14px;
@@ -545,13 +549,6 @@ footer {
         border-top: 0px;
     }
 
-    .activities-button {
-        width: 100%;
-        padding-bottom: 14px;
-        border-bottom: 2px #F2F2F2 solid;
-        text-align: center;
-    }
-    
     /* Search bar */ 
 
     .fa-magnifying-glass {
